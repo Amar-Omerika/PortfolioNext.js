@@ -251,7 +251,7 @@ export default function Home({ articles }) {
     <>
       <Head>
         <title>
-          Spencer Sharp - Software designer, founder, and amateur astronaut
+          Amar Omerika - Software engineer, web developer, and Mobile developer
         </title>
         <meta
           name="description"
@@ -261,32 +261,30 @@ export default function Home({ articles }) {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software designer, founder, and amateur astronaut.
+            Software engineer, web and mobile developer.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Spencer, a software designer and entrepreneur based in New York
-            City. I’m the founder and CEO of Planetaria, where we develop
-            technologies that empower regular people to explore space on their
-            own terms.
+            I’m Amar, a software engineer based in Mostar, Bosnia&Herzegovina
+            I’m Web & Mobile developer.
           </p>
           <div className="mt-6 flex gap-6">
-            <SocialLink
+            {/* <SocialLink
               href="https://twitter.com"
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
-            />
+            /> */}
             <SocialLink
-              href="https://instagram.com"
+              href="https://www.instagram.com/amaromerika/"
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
             />
             <SocialLink
-              href="https://github.com"
+              href="https://github.com/Amar-Omerika"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
             <SocialLink
-              href="https://linkedin.com"
+              href="https://ba.linkedin.com/in/amar-omerika-4b7625208?trk=public_post_feed-actor-name"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
