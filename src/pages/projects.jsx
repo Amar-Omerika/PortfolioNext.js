@@ -3,48 +3,34 @@ import Image from 'next/image'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
+import logoMenea from '@/images/logos/menea.png'
+import logoDietApp from '@/images/logos/diet.png'
+import logoKeeperApp from '@/images/logos/keeper.png'
+
+
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'Menea Website',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
-    logo: logoPlanetaria,
+      'This is a website for a Swedish client for whom I worked. The technologies that I used to build this website are React.js and Tailwind. After finishing the website, I hosted it on loopia.com.',
+    link: { href: 'https://menea.se/', label: 'menea.se' },
+    logo: logoMenea,
   },
   {
-    name: 'Animaginary',
+    name: 'Diet app',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoAnimaginary,
+    'This is a simple app in React where you can type a certain amount of calories and the app gives you back three meals you can make in that range of calories. This app is good when you want to track your daily dose of calories but you don˝t know what to cook. For this App, I used Api from spoonacular.com',
+    link: { href: 'https://amars-diet-app.netlify.app', label: 'dietApp' },
+    logo: logoDietApp,
   },
   {
-    name: 'HelioStream',
+    name: 'Keeper app',
     description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
-  },
-  {
-    name: 'cosmOS',
-    description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
-  },
-  {
-    name: 'OpenShuttle',
-    description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
-  },
+    'Keeper App is an app where you can add your notes and delete them.This app was made using React framework.',
+    link: { href: 'https://visionary-chimera-800cf2.netlify.app', label: 'keeperApp' },
+    logo: logoKeeperApp,
+  }
 ]
 
 function LinkIcon(props) {
@@ -62,7 +48,7 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Projects - Spencer Sharp</title>
+        <title>Projects - Amar Omerika</title>
         <meta
           name="description"
           content="Things I’ve made trying to put my dent in the universe."
