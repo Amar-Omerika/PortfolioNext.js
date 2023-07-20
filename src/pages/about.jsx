@@ -10,7 +10,7 @@ import {
   LinkedInIcon,
   TwitterIcon,
 } from '@/components/SocialIcons'
-import portraitImage from '@/images/portrait.jpg'
+import portraitImage from '@/images/avatar.jpg'
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
@@ -41,10 +41,10 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About - Spencer Sharp</title>
+        <title>About - Amar Omerika</title>
         <meta
           name="description"
-          content="I’m Spencer Sharp. I live in New York City, where I design the future."
+          content="I’m Amar Omerika. I live in Mostar,Bosnia & Herzegovina, where I design the future."
         />
       </Head>
       <Container className="mt-16 sm:mt-32">
@@ -61,58 +61,40 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I’m Spencer Sharp. I live in New York City, where I design the
-              future.
+            I’m Amar Omerika. I live in Mostar, Bosnia & Herzegovina, where I design the future.
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                I’ve loved making things for as long as I can remember, and
-                wrote my first program when I was 6 years old, just two weeks
-                after my mom brought home the brand new Macintosh LC 550 that I
-                taught myself to type on.
+              I’m React and React Native developer who is always open to suggestions, and willing to learn. I have experience working as part of a team and individually in my company.I worked on multiple projects in my company and finished it successfully and with passion.
               </p>
               <p>
-                The only thing I loved more than computers as a kid was space.
-                When I was 8, I climbed the 40-foot oak tree at the back of our
-                yard while wearing my older sister’s motorcycle helmet, counted
-                down from three, and jumped — hoping the tree was tall enough
-                that with just a bit of momentum I’d be able to get to orbit.
+              As a frontend developer, I have a solid foundation in HTML, CSS, and JavaScript, and I keep up with the latest trends and best practices in frontend development. I am well-versed in popular frontend frameworks and libraries, such as React, Next.js, which allow me to create interactive and responsive user interfaces that work seamlessly across devices and browsers.
+              In the mobile realm, I specialize in building cross-platform applications using frameworks like React Native. This enables me to create native-like mobile experiences for both Android and iOS platforms, saving time and resources without compromising on quality.
               </p>
               <p>
-                I spent the next few summers indoors working on a rocket design,
-                while I recovered from the multiple surgeries it took to fix my
-                badly broken legs. It took nine iterations, but when I was 15 I
-                sent my dad’s Blackberry into orbit and was able to transmit a
-                photo back down to our family computer from space.
-              </p>
-              <p>
-                Today, I’m the founder of Planetaria, where we’re working on
-                civilian space suits and manned shuttle kits you can assemble at
-                home so that the next generation of kids really <em>can</em>{' '}
-                make it to orbit — from the comfort of their own backyards.
+              If you're looking for a dedicated and skilled frontend web and mobile developer to bring your project to life, I'd love to hear from you! Whether it's a web application, a mobile app, or an interactive website, I am excited to collaborate and turn your vision into reality.
+              Thank you for visiting my portfolio, and I hope you enjoy exploring my projects and getting to know more about my journey as a frontend developer. If you have any questions or inquiries, feel free to reach out through the contact section – I'd be delighted to connect with you!
+              Let's create remarkable digital experiences together! 🚀
               </p>
             </div>
           </div>
           <div className="lg:pl-20">
             <ul role="list">
-              <SocialLink href="#" icon={TwitterIcon}>
-                Follow on Twitter
-              </SocialLink>
-              <SocialLink href="#" icon={InstagramIcon} className="mt-4">
+              <SocialLink href="https://www.instagram.com/amaromerika9/" icon={InstagramIcon} className="mt-4">
                 Follow on Instagram
               </SocialLink>
-              <SocialLink href="#" icon={GitHubIcon} className="mt-4">
+              <SocialLink href="https://github.com/Amar-Omerika" icon={GitHubIcon} className="mt-4">
                 Follow on GitHub
               </SocialLink>
-              <SocialLink href="#" icon={LinkedInIcon} className="mt-4">
+              <SocialLink href="https://ba.linkedin.com/in/amar-omerika-4b7625208?trk=public_post_feed-actor-name" icon={LinkedInIcon} className="mt-4">
                 Follow on LinkedIn
               </SocialLink>
               <SocialLink
-                href="mailto:spencer@planetaria.tech"
+                href="mailto:amar.omerika@edu.fit.ba"
                 icon={MailIcon}
                 className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
               >
-                spencer@planetaria.tech
+               amar.omerika@edu.fit.ba
               </SocialLink>
             </ul>
           </div>
