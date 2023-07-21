@@ -6,6 +6,8 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 import logoMenea from '@/images/logos/menea.png'
 import logoDietApp from '@/images/logos/diet.png'
 import logoKeeperApp from '@/images/logos/keeper.png'
+import logoOrdresApp from '@/images/logos/ordres.jpeg'
+
 
 
 
@@ -30,6 +32,13 @@ const projects = [
     'Keeper App is an app where you can add your notes and delete them.This app was made using React framework.',
     link: { href: 'https://visionary-chimera-800cf2.netlify.app', label: 'keeperApp' },
     logo: logoKeeperApp,
+  },
+  {
+    name: 'Ordres',
+    description:
+    'Ordres app is made for restaurants around the EU. Guests can place an order within a few clicks or simply by scanning the QR code to access the restaurant menu and place an order, thus reducing the time for both custemer and the restaurant. And also the app is there to provide restaurants with various benefits such as statistics, the most popular deals, customer satisfaction, etc.Technologies that I used for this projects are: React, React Native, Tailwind, Typescript.',
+    link: { href: 'https://www.ordres.eu/', label: 'ordres' },
+    logo: logoOrdresApp,
   }
 ]
 
