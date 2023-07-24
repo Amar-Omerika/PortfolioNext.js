@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import clsx from 'clsx'
+import React, { useState,useEffect } from 'react';
 
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
@@ -196,33 +197,93 @@ function Resume() {
     </div>
   )
 }
+function useWindowSize() {
+  const [windowSize, setWindowSize] = useState({
+    width: typeof window !== 'undefined' ? window.innerWidth : 0,
+    height: typeof window !== 'undefined' ? window.innerHeight : 0,
+  });
 
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    // Check if window is available before adding the event listener
+    if (typeof window !== 'undefined') {
+      window.addEventListener('resize', handleResize);
+
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }
+  }, []);
+
+  return windowSize;
+}
 function Photos() {
-  let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
+  const screenSize = useWindowSize();
+  let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2'];
 
   return (
     <div className="mt-16 sm:mt-20">
       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
+        {screenSize.width < 600 && (
           <div
-            key={image.src}
+            key={image1.src} // Assuming image1 is defined somewhere
             className={clsx(
               'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
-              rotations[imageIndex % rotations.length]
+              rotations[0] // Use rotations[0] to fix the first image's rotation
             )}
           >
             <Image
-              src={image}
+              src={image1} // Assuming image1 is defined somewhere
               alt=""
               sizes="(min-width: 640px) 18rem, 11rem"
               className="absolute inset-0 h-full w-full object-cover"
             />
           </div>
+        )}
+        {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
+          screenSize.width < 1200 ? (
+            <div
+              key={image.src}
+              className={clsx(
+                'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
+                rotations[imageIndex % rotations.length]
+              )}
+            >
+              <Image
+                src={image}
+                alt=""
+                sizes="(min-width: 640px) 18rem, 11rem"
+                className="absolute inset-0 h-full w-full object-cover"
+              />
+            </div>
+          ) : (
+            <div
+              key={image.src}
+              className={clsx(
+                'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
+                rotations[imageIndex % rotations.length]
+              )}
+            >
+              <Image
+                src={image}
+                alt=""
+                sizes="(min-width: 640px) 18rem, 11rem"
+                className="absolute inset-0 h-full w-full object-cover"
+              />
+            </div>
+          )
         ))}
       </div>
     </div>
-  )
+  );
 }
+
 
 export default function Home({ articles }) {
   return (
