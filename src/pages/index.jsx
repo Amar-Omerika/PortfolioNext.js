@@ -140,7 +140,7 @@ function Resume() {
       company: 'Visiot.doo',
       title: 'Web & Mobile developer',
       logo: visitoLogo,
-      start: '2022',
+      start: '2021',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear(),
