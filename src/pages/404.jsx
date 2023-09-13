@@ -7,7 +7,7 @@ export default function NotFound() {
   return (
     <>
       <Head>
-        <title>Page not found - Spencer Sharp</title>
+        <title>Page not found - Amar Omerika</title>
       </Head>
       <Container className="flex h-full items-center pt-16 sm:pt-32">
         <div className="flex flex-col items-center">

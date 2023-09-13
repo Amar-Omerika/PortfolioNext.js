@@ -7,6 +7,7 @@ import logoMenea from '@/images/logos/menea.png'
 import logoDietApp from '@/images/logos/diet.png'
 import logoKeeperApp from '@/images/logos/keeper.png'
 import logoOrdresApp from '@/images/logos/ordres.jpeg'
+import logoEcommerce from '@/images/logos/ecommerce.png'
 
 
 
@@ -39,6 +40,13 @@ const projects = [
     'Ordres app is made for restaurants around the EU. Guests can place an order within a few clicks or simply by scanning the QR code to access the restaurant menu and place an order, thus reducing the time for both custemer and the restaurant. And also the app is there to provide restaurants with various benefits such as statistics, the most popular deals, customer satisfaction, etc.Technologies that I used for this projects are: React, React Native, Tailwind, Typescript.',
     link: { href: 'https://www.ordres.eu/', label: 'ordres' },
     logo: logoOrdresApp,
+  },
+  {
+    name: 'Ecommerce',
+    description:
+    'Simple e-commerce web shop built with Next.js and typescript.',
+    link: { href: 'https://ecommerceamar.netlify.app/', label: 'ecommerce' },
+    logo: logoEcommerce,
   }
 ]
 
